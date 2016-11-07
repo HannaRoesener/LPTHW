@@ -174,7 +174,7 @@ def cafeteria():
                 print "Yeah, you are right. The whole sitation seems a bit odd."
                 print "You hand-cuff the man and take him outside the building."
                 print "After he has been taken into custody and many questionings it turns out he was the murderer."
-                print "Agent %s you can be proud of yourself! You trusted your instincts and catch the bad guy."
+                print "Agent %s you can be proud of yourself! You trusted your instincts and catch the bad guy." % name
             else:
                 print "Please type in a clear answer."
                 choice = raw_input("\f'yes' or 'no' \n>> ")
@@ -264,11 +264,19 @@ def office_room():
                 print "You better go upstairs then."
                 lift()
             elif choice == "team":
-                print "You are releived to speak to others."
+                print "You are relieved to speak to others."
                 print "Your operation is over."
+            else:
+                print "Sorry %s, go back into the lift." % name
+                lift()
+        elif choice == "lift":
+            lift()
+        else:
+            print "What are you doing? Better choose another floor."
+            lift()
 
     elif choice == "lift":
-            lift()
+        lift()
     else:
         print "Type something else."
         choice = raw_input("\f'search' or 'lift' \n>> ")
