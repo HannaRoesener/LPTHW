@@ -3,7 +3,13 @@ name = raw_input("Name: ")
 
 print "______________________________________"
 print """
-\nPicture this scene:
+Please copy this URL and listen to the music while playing:
+https://www.youtube.com/watch?v=Vxq_AnaB_tM
+When you are done press ENTER."""
+
+enter = raw_input("> ")
+
+print """\nPicture this scene:
 You are working as a police agent.
 
 \t >>> Agent %s <<<
@@ -11,7 +17,7 @@ You are working as a police agent.
 Today you have been called to a crime scene.
 Someone has been murdered in an office.
 You are the first to arrive at the building.
-Reliable sources have confimred that the bad guy is still inside somewhere.
+Reliable sources have confirmed that the bad guy is still inside somewhere.
 Backup is on its way. For now you are on your own though.
 You don't hesitate and rush into the building.
 You look around and find youself in a huge foyer.
@@ -102,7 +108,7 @@ def foyer_room():
 def cafeteria():
     print "\nCAFETERIA"
     print "The smell of coffee is tempting. Oh and look at the jummy pastry. A little coffee break won't hurt anybody - wouldn't it?"
-    print "Do you want to gat a cup of coffee?"
+    print "Do you want to get a cup of coffee?"
     print "Or keep looking for the bad guy?"
     choice = raw_input("\f'coffee' or 'continue' \n>> ")
     if choice == "coffee":
