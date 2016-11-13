@@ -118,7 +118,7 @@ def cafeteria():
         if choice == "short":
             print "The caffeine made you think clearer now."
             print "Wait a minute, why is there someone selling coffee anyway? There shouldn't be a person in here... except the murderer himself."
-            print "Well done! It took you some time, but you sharpend your senses and managed to catch the bad guy. Wuuhuhu!\f"
+            print "Well done! It took you some time, but you sharpened your senses and managed to catch the bad guy. Wuuhuhu!\f"
         elif choice == "long":
             print "The coffee selling guy is gone... You were so deep in through that you didn't realize."
             print "By now he must be far, far away. What a shame!"
